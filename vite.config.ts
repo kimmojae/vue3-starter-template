@@ -8,7 +8,6 @@ import Layouts from 'vite-plugin-vue-layouts'
 import AutoImport from 'unplugin-auto-import/vite'
 import { VueRouterAutoImports } from 'unplugin-vue-router'
 import Components from 'unplugin-vue-components/vite'
-import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -37,7 +36,6 @@ export default defineConfig({
     Components({
       dts: true,
     }),
-    tailwindcss(),
   ],
   resolve: {
     alias: {
